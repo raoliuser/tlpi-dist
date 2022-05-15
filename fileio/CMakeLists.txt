@@ -1,0 +1,11 @@
+# cmake_minimum_required(VERSION 3.20)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+
+add_executable(atomic_append atomic_append.c)
+add_executable(copy copy.c)
+add_executable(bad_exclusive_open bad_exclusive_open.c)
+add_executable(multi_descriptors multi_descriptors.c)
+add_executable(t_readv t_readv.c)
+add_executable(t_truncate t_truncate.c)
+add_executable(large_file large_file.c)
+add_executable(seek_io seek_io.c)

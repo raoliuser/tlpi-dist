@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.20)
+
+project(tlpi-dist)
+
+# set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+
+# message("PROJECT_SOURCE_DIR : ${PROJECT_SOURCE_DIR}")
+include_directories(${PROJECT_SOURCE_DIR}/lib)
+link_directories(${PROJECT_SOURCE_DIR})
+link_libraries(libtlpi.a)
+
+add_subdirectory(progconc)
+add_subdirectory(fileio)
+add_subdirectory(proc)
+add_subdirectory(memalloc)
+add_subdirectory(users_groups)
+add_subdirectory(proccred)
+add_subdirectory(time)
+add_subdirectory(syslim)
+add_subdirectory(sysinfo)
