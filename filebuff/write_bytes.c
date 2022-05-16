@@ -49,7 +49,7 @@ main(int argc, char *argv[])
     if (buf == NULL)
         errExit("malloc");
 
-    openFlags = O_CREAT | O_WRONLY;
+    openFlags = O_CREAT | O_WRONLY | O_TRUNC;
 
 #if defined(USE_O_SYNC) && defined(O_SYNC)
     openFlags |= O_SYNC;
