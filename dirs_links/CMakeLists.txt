@@ -1,0 +1,11 @@
+# cmake_minimum_required(VERSION 3.20)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+
+add_executable(t_unlink t_unlink.c)
+add_executable(view_symlink view_symlink.c)
+add_executable(bad_symlink bad_symlink.c)
+add_executable(list_files list_files.c)
+add_executable(list_files_readdir_r list_files_readdir_r.c)
+add_executable(t_dirbasename t_dirbasename.c)
+add_executable(nftw_dir_tree nftw_dir_tree.c)
+add_executable(file_type_stats file_type_stats.c)

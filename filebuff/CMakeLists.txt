@@ -1,0 +1,10 @@
+# cmake_minimum_required(VERSION 3.20)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+
+# add_definitions(-DUSE_O_SYNC)
+# add_definitions(-DUSE_FSYNC)
+# add_definitions(-DUSE_FDATASYNC)
+add_executable(direct_read direct_read.c)
+add_executable(write_bytes write_bytes.c)
+add_executable(mix23io mix23io.c)
+add_executable(mix23_linebuff mix23_linebuff.c)
