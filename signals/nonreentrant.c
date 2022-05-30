@@ -21,6 +21,7 @@
 #include <unistd.h>
 #include <signal.h>
 #include <string.h>
+#include <crypt.h>
 #include "tlpi_hdr.h"
 
 static char *str2;              /* Set from argv[2] */
