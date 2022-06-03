@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.18)
 
 project(tlpi-dist)
 
@@ -26,3 +26,4 @@ add_subdirectory(acl)
 add_subdirectory(dirs_links)
 add_subdirectory(inotify)
 add_subdirectory(signals)
+add_subdirectory(timers)
