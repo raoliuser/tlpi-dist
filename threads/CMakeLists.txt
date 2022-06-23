@@ -1,0 +1,13 @@
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
+
+link_libraries(pthread)
+add_executable(simple_thread simple_thread.c)
+add_executable(detached_attrib detached_attrib.c)
+add_executable(thread_incr thread_incr.c)
+add_executable(thread_incr_mutex thread_incr_mutex.c)
+add_executable(thread_multijoin thread_multijoin.c)
+add_executable(strerror_test strerror_test.c strerror.c)
+add_executable(strerror_test_tsd strerror_test.c strerror_tsd.c)
+add_executable(strerror_test_tls strerror_test.c strerror_tls.c)
+add_executable(thread_cancel thread_cancel.c)
+add_executable(thread_cleanup thread_cleanup.c)

@@ -1,5 +1,6 @@
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 
+link_libraries(pthread)
 add_executable(t_fork t_fork.c)
 add_executable(fork_file_sharing fork_file_sharing.c)
 add_executable(footprint footprint.c)
